@@ -68,18 +68,18 @@ namespace triton {
 
     #if defined(__x86_64__) || defined(_M_X64)
     //! unsigned long long if the arch is 64-bits.
-    typedef unsigned long long __uint;
+    typedef uint64 __uint;
 
     //! signed long long if the arch is 64-bits.
-    typedef signed long long __sint;
+    typedef sint64 __sint;
     #endif
 
     #if defined(__i386) || defined(_M_IX86)
     //! unsigned int if the arch is 32-bits.
-    typedef unsigned int __uint;
+    typedef uint32 __uint;
 
     //! signed int if the arch is 32-bits.
-    typedef signed int __sint;
+    typedef sint32 __sint;
     #endif
 
 /*! @} End of triton namespace */
